@@ -4,7 +4,7 @@
 }
 body{
     width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter", sans-serif;
     background-color: #FEF1D9;
 }
 .top-bar{
@@ -28,9 +28,10 @@ body{
   top: 26px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 62px;
+  margin-bottom: 52px;
 }
 .sign-up-cream h2{
+  font-family: "Inter", sans-serif;
   opacity: 40%;
   font-size: 28px;
   color:#27302D;
@@ -45,10 +46,12 @@ body{
   bottom: 26px;
 }
 .sign-down-cream h2{
+  font-family: "Inter", sans-serif;
   opacity: 10%;
   font-size: 28px;
   color:#27302D;
   font-weight: 900;
+
 
 }
 .sign-up-dark{
@@ -57,9 +60,10 @@ body{
   top: 26px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 62px;
+  margin-bottom: 52px;
 }
 .sign-up-dark h2{
+  font-family: "Inter", sans-serif;
   opacity: 40%;
   color:#FFFFFF;
   font-size: 28px;
@@ -74,6 +78,7 @@ body{
   justify-content: space-between;
 }
 .sign-down-dark h2{
+  font-family: "Inter", sans-serif;
   opacity: 10%;
     color:#FFFFFF;
   font-size: 28px;
@@ -87,13 +92,15 @@ body{
   top: 26px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 62px;
+  margin-bottom: 52px;
 }
 
 .sign-up-red h2{
+  font-family: "Inter", sans-serif;
   opacity: 70%;
   color:#2C2C2E;
   font-weight: 900;
+  font-size: 28px;
 }
 .sign-down-red{
   position: absolute;
@@ -103,9 +110,11 @@ body{
   justify-content: space-between;
 }
 .sign-down-red h2{
+  font-family: "Inter", sans-serif;
   opacity: 40%;
   color:#2C2C2E;
   font-weight: 900;
+  font-size: 28px;
 }
 
 .main{
@@ -130,6 +139,7 @@ body{
 .red{
   position: relative;
   color:#FB4B4D;
+  font-family: "Inter", sans-serif;
   font-size: 48px;
   letter-spacing: 10%;
   line-height: 44px;
@@ -140,6 +150,7 @@ button{
   background-color: #FB4B4D;
   border: solid 1px #FB4B4D;
   border-radius: 8px;
+  font-family: "Inter", sans-serif;
   width: 100%;
   color:#FEF1D9;
   font-size: 16px;
@@ -157,7 +168,7 @@ section{
   }
   #the-story{
     background-color: #2C2C2E;
-    height: 830px;
+    height: 870px;
   }
   #services{
     background-color: #FB4B4D;
@@ -204,6 +215,7 @@ section{
 }
 .class_one{
   position: relative;
+  font-family: "Inter", sans-serif;
   margin-top: 12px;
   color:white;
   font-size: 12px;
@@ -212,6 +224,7 @@ section{
 }
 .class_two{
   position: relative;
+  font-family: "Inter", sans-serif;
   margin-top: 12px;
   color:white;
   font-size: 12px;
@@ -224,11 +237,19 @@ section{
   margin-bottom: 24px;
 }
 .smallText{
-  font-family:"arial";
-  font-size:12px;
-  font-weight:"400";
+  font-family: "Inter", sans-serif;
+  font-size:14px;
+  font-weight:400;
   color: #FFFFFF;
   opacity: 40%;
+  margin-bottom: 12px;
+}
+.smallText_l{
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight:500;
+  color: #FFFFFF;
+  opacity: 70%;
   margin-bottom: 12px;
 }
 .form{
@@ -242,22 +263,28 @@ section{
   background-color:#2C2C2E;
   color:#FFFFFF;
   opacity: 40%;
+  font-family: "Inter", sans-serif;
   font-size:12px;
+  font-weight: 500;
   margin-bottom:24px;
   border:solid 1px rgb(255,255,255,0.40);
-  border-radius: 8px;
+  border-radius: 4px;
+  text-indent: 10px;
 }
 .input-in-two{
   position: relative;
   height:100px;
   width:100%;
   background-color:#2C2C2E;
+  font-family: "Inter", sans-serif;
   color:#FFFFFF;
   opacity: 40%;
   font-size:12px;
+  font-weight: 500;
   margin-bottom:24px;
+  text-indent: 10px;
   border:solid 1px rgb(255,255,255,0.40);
-  border-radius: 8px;
+  border-radius: 4px;
 
 }
 .socials{
@@ -283,6 +310,7 @@ section{
   background-color: #FB4B4D;
   border: solid 1px #FB4B4D;
   border-radius: 8px;
+  font-family: "Inter", sans-serif;
   width: 100%;
   color:#FEF1D9;
   font-size: 16px;
@@ -306,27 +334,27 @@ section{
 }
 .ico-e{
   position: relative;
-  height: 32px;
-  width: 32px;
-  margin-left: 12px;
+  height: 24px;
+  width: 24px;
   margin-top: 20px;
+  opacity: 40%;
 }
-.class_one{
+.class_one_s{
   position: relative;
+  font-family: "Inter", sans-serif;
   margin-top: 12px;
   color:white;
   font-size: 12px;
   font-weight: bold;
-  margin-left: 12px;
   opacity: 70%;
 }
-.class_two{
+.class_two_s{
   position: relative;
   margin-top: 12px;
+  font-family: "Inter", sans-serif;
   color:white;
   font-size: 12px;
   font-weight: bolder;
-  margin-left: 12px;
   opacity: 40%;
 
 }
@@ -337,7 +365,7 @@ section{
 }
 .year{
   position: relative;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Ïnter", sans-serif;
   font-weight: 900;
   font-size: 18px;
   margin-top: 20px;
