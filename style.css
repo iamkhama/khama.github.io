@@ -24,7 +24,17 @@
   }
   
 }
-
+@-webkit-keyframes text-reveal {
+  from{
+    opacity: 0%;
+    clip-path: inset(100% 100% 0 0);
+  }
+  to{
+    opacity: 40%;
+    clip-path: inset(0 0 0 0);
+  }
+  
+}
 @keyframes text-reveal {
   from{
     opacity: 0%;
@@ -36,14 +46,15 @@
   }
   
 }
-@-webkit-keyframes text-reveal {
+
+@-webkit-keyframes shows {
   from{
     opacity: 0%;
-    clip-path: inset(100% 100% 0 0);
+    scale: 0.7;
   }
   to{
-    opacity: 40%;
-    clip-path: inset(0 0 0 0);
+    opacity: 100%;
+    scale: 1;
   }
   
 }
@@ -58,17 +69,7 @@
   }
   
 }
-@-webkit-keyframes shows {
-  from{
-    opacity: 0%;
-    scale: 0.7;
-  }
-  to{
-    opacity: 100%;
-    scale: 1;
-  }
-  
-}
+
 body{
     width: 100%;
     font-family: "Inter", sans-serif;
@@ -262,8 +263,8 @@ section{
     margin-left: 16px;
     margin-right: 16px;
     height: 100%;
-    animation: shows linear;
     -webkit-animation: shows linear;
+    animation: shows linear;
     animation-timeline: view();
     animation-range: entry 0;
     
@@ -279,8 +280,8 @@ section{
   border: solid 1px #2C2C2E;
   border-radius: 4px;
   margin-bottom: 12px;
-  animation: reveal linear;
   -webkit-animation: reveal linear;
+  animation: reveal linear;
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
 
@@ -411,8 +412,8 @@ section{
   border-bottom: solid 1px rgba(255, 255, 255, 0.40);
   border-radius: 0px;
   margin-bottom: 8px;
-  animation: reveal linear;
   -webkit-animation: reveal linear;
+  animation: reveal linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -440,8 +441,8 @@ section{
   color:white;
   font-size: 12px;
   font-weight: bolder;
-  animation: text-reveal linear;
   -webkit-animation: text-reveal linear;
+  animation: text-reveal linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
   opacity: 40%;
