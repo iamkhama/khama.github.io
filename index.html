@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,9 +12,25 @@
         Khama
     </title>
     <body>
-        <div class="top-bar">
-            <img class="options" src="menu-burger.png"/>
-        </div>
+        <div class="container">
+            <nav class="nav" role="navigation">
+              <div class="nav__container">
+                <div class="toggle-menu">
+                  <input type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <div class="menu">
+                    <ul class="menu__list">
+                      <a href="#home"><li class="menu__list-item">Home</li></a>
+                      <a href="#the-story"><li class="menu__list-item">The Story</li></a>
+                      <a href="#services"><li class="menu__list-item">Services</li></a>
+                      <a href="#reach-out"><li class="menu__list-item">Reachout</li></a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
         <section id="home">
             <div class="content">
                 <div class="sign-up-cream">
