@@ -2,6 +2,39 @@
     padding: 0px;
     margin: 0px;
 }
+@keyframes reveal {
+  from{
+    opacity: 0;
+    clip-path: inset(100% 100% 0 0);
+  }
+  to{
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+  
+}
+@keyframes text-reveal {
+  from{
+    opacity: 0%;
+    clip-path: inset(100% 100% 0 0);
+  }
+  to{
+    opacity: 40%;
+    clip-path: inset(0 0 0 0);
+  }
+  
+}
+@keyframes shows {
+  from{
+    opacity: 0%;
+    scale: 0.7;
+  }
+  to{
+    opacity: 100%;
+    scale: 1;
+  }
+  
+}
 body{
     width: 100%;
     font-family: "Inter", sans-serif;
@@ -193,6 +226,9 @@ section{
     margin-left: 16px;
     margin-right: 16px;
     height: 100%;
+    animation: shows linear;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
 .cards{
   position: relative;
@@ -205,6 +241,10 @@ section{
   border: solid 1px #2C2C2E;
   border-radius: 4px;
   margin-bottom: 12px;
+  animation: reveal linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+
 }
 .ico{
   position: relative;
@@ -270,6 +310,7 @@ section{
   border:solid 1px rgb(255,255,255,0.40);
   border-radius: 4px;
   text-indent: 10px;
+  
 }
 .input-in-two{
   position: relative;
@@ -331,6 +372,9 @@ section{
   border-bottom: solid 1px rgba(255, 255, 255, 0.40);
   border-radius: 0px;
   margin-bottom: 8px;
+  animation: reveal linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .ico-e{
   position: relative;
@@ -347,6 +391,7 @@ section{
   font-size: 12px;
   font-weight: bold;
   opacity: 70%;
+ 
 }
 .class_two_s{
   position: relative;
@@ -355,6 +400,9 @@ section{
   color:white;
   font-size: 12px;
   font-weight: bolder;
+  animation: text-reveal linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
   opacity: 40%;
 
 }
