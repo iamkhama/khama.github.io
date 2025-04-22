@@ -234,3 +234,27 @@
         </section>
     </body>
 </html>
+<script>
+    document.addEventListener("DOMContentLoaded", 
+    
+    function () {
+      const reveals = document.querySelectorAll('.content');
+  
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove('visible');
+            void entry.target.offsetWidth; // Force reflow
+            entry.target.classList.add('visible');
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+  
+      reveals.forEach(el => observer.observe(el));
+    });
+    
+  </script>
+  
+  </script>

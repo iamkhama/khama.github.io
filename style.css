@@ -70,6 +70,15 @@
   
 }
 
+.content {
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+.content.visible {
+  animation: shows 0.8s ease forwards;
+  -webkit-animation: shows 0.8s ease forwards;
+}
 body{
     width: 100%;
     font-family: "Inter", sans-serif;
@@ -263,11 +272,6 @@ section{
     margin-left: 16px;
     margin-right: 16px;
     height: 100%;
-    -webkit-animation: shows linear;
-    animation: shows linear;
-    animation-timeline: view();
-    animation-range: entry 0;
-    
 }
 .cards{
   position: relative;
