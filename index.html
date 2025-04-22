@@ -235,26 +235,23 @@
     </body>
 </html>
 <script>
-    document.addEventListener("DOMContentLoaded", 
-    
-    function () {
-      const reveals = document.querySelectorAll('.content');
-  
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.remove('visible');
-            void entry.target.offsetWidth; // Force reflow
-            entry.target.classList.add('visible');
-          }
-        });
-      }, {
-        threshold: 0.1
+  document.addEventListener("DOMContentLoaded", function () {
+    const reveals = document.querySelectorAll('.content');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('gone');
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+          entry.target.classList.add('gone');
+        }
       });
-  
-      reveals.forEach(el => observer.observe(el));
+    }, {
+      threshold: 0.1
     });
-    
-  </script>
-  
-  </script>
+
+    reveals.forEach(el => observer.observe(el));
+  });
+</script>

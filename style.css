@@ -58,6 +58,26 @@
   }
   
 }
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    scale: 1;
+  }
+  to {
+    opacity: 0;
+    scale: 0.7;
+  }
+}
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+    scale: 1;
+  }
+  to {
+    opacity: 0;
+    scale: 0.7;
+  }
+}
 @keyframes shows {
   from{
     opacity: 0%;
@@ -79,6 +99,11 @@
   animation: shows 0.8s ease forwards;
   -webkit-animation: shows 0.8s ease forwards;
 }
+.content.gone {
+  animation: fadeout 0.5s ease forwards;
+  -webkit-animation: fadeOut 0.5s ease forwards;
+}
+
 body{
     width: 100%;
     font-family: "Inter", sans-serif;
