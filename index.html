@@ -56,13 +56,18 @@
                     <h2>O</h2>
                 </div>
                 <div class="main">
-                    <div class="image-one"></div>
                 <div class="hero">
                     <h1 class="welcome">
                         <b class="red">FullStack Developer</b><br></br>
                         Khama is a Professional FullStack Developer who blends art & technology to create Bold, visually striking digital experience
                     </h1>
-                    <button class="action">GET IN TOUCH</button>
+                    <a href="#reach-out"><div class="getting">
+                    <h1 class="get">Let's Talk</h1>
+                    <img src="right-arrow (2).png">
+                    </div></a>
+                </div>
+                <div class="home-image">
+                    <img src="homeIMG.png"/>
                 </div>
                 </div>
                 <div class="sign-down-cream">
@@ -235,23 +240,23 @@
     </body>
 </html>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const reveals = document.querySelectorAll('.content');
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.remove('gone');
-          entry.target.classList.add('visible');
-        } else {
-          entry.target.classList.remove('visible');
-          entry.target.classList.add('gone');
-        }
+    document.addEventListener("DOMContentLoaded", function () {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove('gone');
+            entry.target.classList.add('visible');
+          } else {
+            entry.target.classList.remove('visible');
+            entry.target.classList.add('gone');
+          }
+        });
+      }, {
+        threshold: 0.1
       });
-    }, {
-      threshold: 0.1
+  
+      const elementsToReveal = document.querySelectorAll('.content');
+      elementsToReveal.forEach(el => observer.observe(el));
     });
-
-    reveals.forEach(el => observer.observe(el));
-  });
-</script>
+  </script>
+  
