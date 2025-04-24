@@ -566,6 +566,9 @@ input, button:active{
   border-radius: 4px;
 
 }
+input:focus {
+  outline: 2px solid #FB4B4D;
+}
 .socials{
   position: relative;
   display: flex;
