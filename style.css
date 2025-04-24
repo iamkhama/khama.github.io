@@ -303,6 +303,26 @@ body{
   font-family: "Inter", sans-serif;
   cursor: pointer;
 }
+.logo-txt{
+  position: relative;
+  color:#2C2C2E;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 10%;
+  font-family: "Fire Code", monospace;
+  cursor: pointer;
+  margin-right: 16px;
+  margin-top: 12px;
+}
+.logo-red{
+  position: relative;
+  color:#FB4B4D;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 10%;
+  font-family: "Fire Code", monospace;
+  cursor: pointer;
+}
 .getting{
   position: relative;
   height: 20px;
@@ -652,6 +672,7 @@ a:hover {
   letter-spacing: 0.05rem;
 }
 
+
 .container {
   position: fixed;
   width: 100%;
@@ -659,6 +680,8 @@ a:hover {
   top:0px;
   z-index: 2;
   background-color: #FEF1D9;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav {
