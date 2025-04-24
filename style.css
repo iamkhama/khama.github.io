@@ -297,10 +297,11 @@ body{
 .welcome{
   position: relative;
   color:#2C2C2E;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 900;
   letter-spacing: 10%;
   font-family: "Inter", sans-serif;
+  cursor: pointer;
 }
 .getting{
   position: relative;
