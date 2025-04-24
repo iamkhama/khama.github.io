@@ -542,7 +542,7 @@ input, button:active{
   color:#FFFFFF;
   opacity: 40%;
   font-family: "Inter", sans-serif;
-  font-size:12px;
+  font-size:16px;
   font-weight: 500;
   margin-bottom:24px;
   border:solid 1px rgb(255,255,255,0.40);
@@ -558,7 +558,7 @@ input, button:active{
   font-family: "Inter", sans-serif;
   color:#FFFFFF;
   opacity: 40%;
-  font-size:12px;
+  font-size:16px;
   font-weight: 500;
   margin-bottom:24px;
   text-indent: 10px;
