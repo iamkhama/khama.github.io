@@ -6,6 +6,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+            
     </head>
     <link rel="Stylesheet" href="style.css">
     <title>
@@ -30,6 +34,11 @@
                 </div>
               </div>
             </nav>
+             <div class="logo">
+                <h1 class="logo-txt">
+                    &lt;khama<b class="logo-red">/&gt;</b>
+                 </h1>
+          </div>
           </div>
         <section id="home">
             <div class="content">
@@ -245,15 +254,15 @@
                         Send a message
                        </h1>
                 </div>
-                <div className="form">
+                <form className="form">
                     <h1 class="smallText_l">Your name</h1>
-                    <input type="text" class="input-in" placeholder="Your name"/>
+                    <input type="text" required class="input-in" placeholder="Your name"/>
                     <h1 class="smallText_l">Email Address</h1>
-                    <input type="text" class="input-in" placeholder="Email Address"/>
+                    <input required type="text" class="input-in" placeholder="Email Address"/>
                     <h1 class="smallText_l">Email Address</h1>
-                    <input type="text" class="input-in-two" placeholder="Email Address"/>
-                    <input type="button" class="input-in-btn" value="SUBMIT MESSAGE"/>
-                </div>
+                    <input required type="text" class="input-in-two" placeholder="Email Address"/>
+                    <input type="submit" class="input-in-btn" value="SUBMIT MESSAGE"/>
+                </form>
                 <div class="socials">
                     <img src="whatsapp.png" alt="wp"/>
                     <img src="linkedin (1).png" alt="ln"/>
