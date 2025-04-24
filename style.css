@@ -380,9 +380,38 @@ section{
   }
   #projects{
     background-color: #FEF1D9;
-  
-    
+    height: 1200px;
   }
+  .project-card{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 100px;
+    margin-bottom: 52px;
+ 
+  }
+  .img-card{
+    position: relative;
+    width: 262px;
+    height: 180px;
+    background-color: #cecee0;
+    border: solid 5px #2C2C2E;
+    border-radius: 8px;
+  }
+  .text-card{
+    position: relative;
+    width: 262px;
+    height: 180px;
+    margin-top: 44px;
+  }
+
+
+
+
+
+
   #testmonies{
     background-color: #FB4B4D;
   
@@ -444,6 +473,21 @@ input, button:active{
   font-weight: bolder;
   margin-left: 12px;
   opacity: 40%;
+}
+.class_three_one{
+  position: relative;
+  font-family: "Inter", sans-serif;
+  color:#2C2C2E;
+  font-size: 12px;
+  font-weight: 900;
+}
+.class_three_two{
+  position: relative;
+  font-family: "Inter", sans-serif;
+  color:#2C2C2E;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 12px;
 }
 .text{
   position: relative;
@@ -562,14 +606,14 @@ input, button:active{
   font-family: "Inter", sans-serif;
   margin-top: 12px;
   color:white;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   opacity: 70%;
  
 }
 .class_two_s{
   position: relative;
-  margin-top: 12px;
+  margin-top: 14px;
   font-family: "Inter", sans-serif;
   color:white;
   font-size: 12px;
