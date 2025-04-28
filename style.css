@@ -423,11 +423,11 @@ section{
   }
 .feed-card{
     position: relative;
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     background-color: #cecee0;
     border: solid 1px #2C2C2E;
-    border-radius: 7px;
+    border-radius: 100px;
   }
   .text-card{
     position: relative;
