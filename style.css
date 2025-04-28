@@ -421,6 +421,14 @@ section{
     border: solid 5px #2C2C2E;
     border-radius: 8px;
   }
+.feed-card{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background-color: #cecee0;
+    border: solid 1px #2C2C2E;
+    border-radius: 7px;
+  }
   .text-card{
     position: relative;
     width: 262px;
